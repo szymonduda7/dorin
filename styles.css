@@ -441,8 +441,10 @@ section {
   animation: reviews-scroll 45s linear infinite;
 }
 
-.reviews-track:hover {
-  animation-play-state: paused;
+@media (hover: hover) {
+  .reviews-track:hover {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes reviews-scroll {
@@ -924,17 +926,21 @@ footer {
   .about-stats {
     border-left: none;
     padding-left: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-top: 2px solid var(--border);
     padding-top: 1.5rem;
+    gap: 1.25rem;
   }
 
   .about-stat {
-    flex: 1;
-    min-width: 110px;
     border-bottom: none;
-    padding: 0 1rem 0 0;
+    padding: 0;
+  }
+
+  .about-stat:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
   }
 
   .contact-grid {
