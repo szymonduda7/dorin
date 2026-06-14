@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dorin Inowrocław – klimatyzacja samochodowa, klimatyzacja domowa, montaż i sprzedaż pomp ciepła AUX Split."
+    />
+    <title>Dorin – Klimatyzacja Inowrocław</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a class="nav-logo" href="#hero">DORI<span>N</span></a>
+      <ul class="nav-links">
+        <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <canvas id="wave-canvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Inowrocław · klimatyzacja · pompy ciepła</p>
+        <h1 class="hero-title">Klimatyzacja,<br />która <em>działa.</em></h1>
+        <p class="hero-sub">
+          Serwis i montaż klimatyzacji samochodowej oraz domowej. Sprzedaż i
+          instalacja pomp ciepła AUX Split.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="tel:+48523532001"
+            >Zadzwoń: 501 404 988</a
+          >
+          <a class="btn-outline" href="#uslugi">Zobacz usługi</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num">2</span>
+            <span class="hero-stat-label">Specjalizacje</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">AUX</span>
+            <span class="hero-stat-label">Partner handlowy</span>
+          </div>
+          <div>
+            <span class="hero-stat-num">501 404 988</span>
+            <span class="hero-stat-label">Szybki kontakt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USŁUGI -->
+    <section id="uslugi">
+      <div class="section-inner">
+        <p class="section-label">Co robimy</p>
+        <h2 class="section-title">Nasze usługi</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="7" width="20" height="11" rx="2" />
+                <path d="M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2" />
+                <circle cx="12" cy="17" r="1" />
+                <line x1="5" y1="11" x2="9" y2="11" />
+              </svg>
+            </div>
+            <h3 class="service-title">Klimatyzacja samochodowa</h3>
+            <p class="service-desc">
+              Napełnianie układu czynnikiem chłodniczym, diagnostyka
+              szczelności, wymiana elementów instalacji. Obsługujemy wszystkie
+              popularne marki.
+            </p>
+            <span class="service-tag">Serwis · Naprawa · Diagnostyka</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="3" width="20" height="7" rx="2" />
+                <path d="M12 10v11M8 14l4-4 4 4" />
+                <rect x="6" y="18" width="12" height="3" rx="1" />
+              </svg>
+            </div>
+            <h3 class="service-title">Klimatyzacja domowa</h3>
+            <p class="service-desc">
+              Montaż jednostek split w mieszkaniach, domach i biurach. Coroczny
+              serwis, czyszczenie filtrów i wymienników. Dobór mocy do
+              powierzchni.
+            </p>
+            <span class="service-tag">Montaż · Serwis · Czyszczenie</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </div>
+            <h3 class="service-title">Pompy ciepła AUX Split</h3>
+            <p class="service-desc">
+              Sprzedaż i profesjonalny montaż pomp ciepła marki AUX. Efektywne
+              ogrzewanie i chłodzenie budynku — jedno urządzenie na cały rok.
+            </p>
+            <span class="service-tag">AUX Split · Sprzedaż · Montaż</span>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+                <rect x="9" y="3" width="6" height="4" rx="1" />
+                <line x1="9" y1="12" x2="15" y2="12" />
+                <line x1="9" y1="16" x2="12" y2="16" />
+              </svg>
+            </div>
+            <h3 class="service-title">Doradztwo i bezpłatna wycena</h3>
+            <p class="service-desc">
+              Nie wiesz jaki system wybrać lub ile kosztuje montaż w Twoim
+              przypadku? Skontaktuj się — doradzimy i wycenimy bezpłatnie,
+              bez żadnych zobowiązań.
+            </p>
+            <span class="service-tag">Bezpłatnie · Bez zobowiązań</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DLACZEGO MY -->
+    <section id="dlaczego">
+      <div class="section-inner">
+        <p class="section-label">Dlaczego Dorin</p>
+        <h2 class="section-title">Solidnie, szybko, bez zbędnych słów.</h2>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <span class="trust-num">01</span>
+            <div>
+              <p class="trust-title">Doświadczony zespół</p>
+              <p class="trust-desc">
+                Technicicy z wieloletnią praktyką w serwisie klimatyzacji
+                samochodowej i budowlanej.
+              </p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">02</span>
+            <div>
+              <p class="trust-title">Szybka realizacja</p>
+              <p class="trust-desc">
+                Krótkie terminy, konkretna wycena — bez czekania tygodniami na
+                wolny termin.
+              </p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">03</span>
+            <div>
+              <p class="trust-title">Markowe urządzenia</p>
+              <p class="trust-desc">
+                Autoryzowana sprzedaż i montaż pomp ciepła AUX Split —
+                sprawdzona jakość.
+              </p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <span class="trust-num">04</span>
+            <div>
+              <p class="trust-title">Klienci indywidualni i firmy</p>
+              <p class="trust-desc">
+                Obsługujemy zarówno osoby prywatne, jak i przedsiębiorstwa.
+                Faktury VAT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="o-nas">
+      <div class="section-inner">
+        <p class="section-label">O firmie</p>
+        <h2 class="section-title">Ponad 35 lat w branży.</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>P.H.U. Dorin Stefan Dorobiała działa w Inowrocławiu od 1991 roku. Przez ponad trzy dekady specjalizujemy się w diagnostyce i serwisie klimatyzacji samochodowej — od aut osobowych po pojazdy ciężarowe i maszyny rolnicze.</p>
+            <p>Z biegiem lat rozszerzyliśmy działalność o montaż i serwis klimatyzacji domowych oraz sprzedaż i instalację pomp ciepła AUX Split. Pracujemy z profesjonalnym sprzętem diagnostycznym — oceniamy każdy układ precyzyjnie, bez domysłów.</p>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="about-stat-num">1991</span>
+              <span class="about-stat-label">Rok założenia</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">35+</span>
+              <span class="about-stat-label">Lat doświadczenia</span>
+            </div>
+            <div class="about-stat">
+              <span class="about-stat-num">Inowrocław</span>
+              <span class="about-stat-label">Kujawsko-Pomorskie</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPINIE -->
+    <section id="opinie">
+      <div class="section-inner">
+        <p class="section-label">Opinie klientów</p>
+        <h2 class="section-title">Co mówią o nas klienci</h2>
+      </div>
+      <div class="reviews-carousel-wrap">
+        <div class="reviews-track">
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
+                <p class="review-name">Andrzej</p>
+                <p class="review-date">30.09.2025</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Bardzo solidna firma. Od lat tam jeżdżę i zawsze jest na najwyższym poziomie.</p>
+            <span class="review-vehicle">Golf 5</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">W</div>
+              <div class="review-meta">
+                <p class="review-name">Wzl</p>
+                <p class="review-date">04.11.2017</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Od lat korzystam z usług DORIN i nie zamierzam szukać alternatywy. Doskonałe doradztwo, bardzo fachowa usługa, dobra cena — nic więcej mi nie potrzeba.</p>
+            <span class="review-vehicle">Citroen Picasso</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
+                <p class="review-name">Adrian</p>
+                <p class="review-date">19.06.2017</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Pan bardzo miły i rzetelny. Robota na najwyższym poziomie. Bardzo polecam — nie spotkałem się jeszcze z tak porządnym nabiciem klimy.</p>
+            <span class="review-vehicle">Mercedes E200</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">D</div>
+              <div class="review-meta">
+                <p class="review-name">Dominik</p>
+                <p class="review-date">16.06.2016</p>
+              </div>
+              <span class="review-stars-row">★★★★</span>
+            </div>
+            <p class="review-text">Serwis klimatyzacji pierwsza klasa, serdecznie polecam wszystkim potrzebującym!</p>
+            <span class="review-vehicle">Renault Megane</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">J</div>
+              <div class="review-meta">
+                <p class="review-name">John</p>
+                <p class="review-date">28.07.2015</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Wreszcie trafiłem na kogoś z porządnym sprzętem komputerowym do klimki. Komputer przetestował stan układu — sprężarkę, szczelność, oczyszczał i uzupełnił. Niższe ceny niż u innych!</p>
+            <span class="review-vehicle">Jeep Grand Cherokee</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">J</div>
+              <div class="review-meta">
+                <p class="review-name">Jakub Bigolas</p>
+                <p class="review-date">4 lata temu</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Korzystam od 3 lat, usługa jak zawsze wykonana profesjonalnie i w korzystnej cenie.</p>
+            <span class="review-vehicle">Konserwacja klimatyzacji</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">B</div>
+              <div class="review-meta">
+                <p class="review-name">Bartek K</p>
+                <p class="review-date">5 lat temu</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Polecam.</p>
+          </div>
+
+          <!-- Duplicate set for seamless loop -->
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
+                <p class="review-name">Andrzej</p>
+                <p class="review-date">30.09.2025</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Bardzo solidna firma. Od lat tam jeżdżę i zawsze jest na najwyższym poziomie.</p>
+            <span class="review-vehicle">Golf 5</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">W</div>
+              <div class="review-meta">
+                <p class="review-name">Wzl</p>
+                <p class="review-date">04.11.2017</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Od lat korzystam z usług DORIN i nie zamierzam szukać alternatywy. Doskonałe doradztwo, bardzo fachowa usługa, dobra cena — nic więcej mi nie potrzeba.</p>
+            <span class="review-vehicle">Citroen Picasso</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">A</div>
+              <div class="review-meta">
+                <p class="review-name">Adrian</p>
+                <p class="review-date">19.06.2017</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Pan bardzo miły i rzetelny. Robota na najwyższym poziomie. Bardzo polecam — nie spotkałem się jeszcze z tak porządnym nabiciem klimy.</p>
+            <span class="review-vehicle">Mercedes E200</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">D</div>
+              <div class="review-meta">
+                <p class="review-name">Dominik</p>
+                <p class="review-date">16.06.2016</p>
+              </div>
+              <span class="review-stars-row">★★★★</span>
+            </div>
+            <p class="review-text">Serwis klimatyzacji pierwsza klasa, serdecznie polecam wszystkim potrzebującym!</p>
+            <span class="review-vehicle">Renault Megane</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">J</div>
+              <div class="review-meta">
+                <p class="review-name">John</p>
+                <p class="review-date">28.07.2015</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Wreszcie trafiłem na kogoś z porządnym sprzętem komputerowym do klimki. Komputer przetestował stan układu — sprężarkę, szczelność, oczyszczał i uzupełnił. Niższe ceny niż u innych!</p>
+            <span class="review-vehicle">Jeep Grand Cherokee</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">J</div>
+              <div class="review-meta">
+                <p class="review-name">Jakub Bigolas</p>
+                <p class="review-date">4 lata temu</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Korzystam od 3 lat, usługa jak zawsze wykonana profesjonalnie i w korzystnej cenie.</p>
+            <span class="review-vehicle">Konserwacja klimatyzacji</span>
+          </div>
+
+          <div class="review-card">
+            <div class="review-card-top">
+              <div class="review-avatar">B</div>
+              <div class="review-meta">
+                <p class="review-name">Bartek K</p>
+                <p class="review-date">5 lat temu</p>
+              </div>
+              <span class="review-stars-row">★★★★★</span>
+            </div>
+            <p class="review-text">Polecam.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-inner">
+        <p class="section-label">Masz pytania</p>
+        <h2 class="section-title">Najczęściej zadawane pytania</h2>
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary class="faq-question">Jak często serwisować klimatyzację samochodową?</summary>
+            <p class="faq-answer">Zalecamy serwis co 2 lata lub co sezon przy intensywnym użytkowaniu. Regularny przegląd wydłuża żywotność układu, zapobiega nieprzyjemnym zapachom i zapewnia skuteczne chłodzenie.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Co to jest odgrzybianie klimatyzacji i czy warto?</summary>
+            <p class="faq-answer">Odgrzybianie to dezynfekcja układu usuwająca bakterie i grzyby gromadzące się na parownikach. Objawem ich obecności jest nieprzyjemny zapach po włączeniu klimatyzacji. Zalecamy wykonanie go razem z każdym serwisem.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Czy obsługujecie samochody ciężarowe i maszyny rolnicze?</summary>
+            <p class="faq-answer">Tak. Obsługujemy wszystkie typy pojazdów: osobowe, dostawcze, ciężarowe oraz maszyny rolnicze.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Jak dobrać odpowiednią klimatyzację domową lub pompę ciepła?</summary>
+            <p class="faq-answer">Dobór zależy od powierzchni pomieszczenia, izolacji budynku i indywidualnych potrzeb. Oferujemy bezpłatne doradztwo i wycenę — zadzwoń lub napisz, a podpowiemy optymalne rozwiązanie.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">Czy wystawiacie faktury VAT?</summary>
+            <p class="faq-answer">Tak. Obsługujemy klientów indywidualnych i firmy. Dane do faktury znajdziesz w sekcji kontaktowej poniżej.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt">
+      <div class="section-inner">
+        <p class="section-label">Skontaktuj się</p>
+        <h2 class="section-title">Znajdź nas lub zadzwoń</h2>
+        <div class="contact-grid">
+          <div>
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Adres</p>
+                <p class="contact-value">
+                  ul. Szosa Bydgoska 59<br />88-100 Inowrocław
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.35 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56A16 16 0 0 0 16 16.09l1.27-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Telefon stacjonarny</p>
+                <p class="contact-value">
+                  <a href="tel:+48523532001">052 353 20 01</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">Telefon komórkowy</p>
+                <p class="contact-value">
+                  <a href="tel:+48501404988">501 404 988</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-label">E-mail</p>
+                <p class="contact-value">
+                  <a href="mailto:biuro@dorin.pl">biuro@dorin.pl</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="hours-box">
+              <p class="hours-title">Godziny otwarcia</p>
+              <div class="hours-grid">
+                <span class="hours-day">Pon – Czw</span>
+                <span class="hours-val">10:00 – 16:00</span>
+                <span class="hours-day">Piątek</span>
+                <span class="hours-val">10:00 – 15:00</span>
+                <span class="hours-day">Sob – Niedz</span>
+                <span class="hours-val hours-closed">Zamknięte</span>
+              </div>
+              <a
+                class="google-profile-link"
+                href="https://share.google/bSSwGvOmG0XDVPRt2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8"/>
+                  <circle cx="12" cy="10" r="3" stroke-width="1.8"/>
+                </svg>
+                Zobacz nasz profil Google
+              </a>
+            </div>
+
+            <div class="b2b-box">
+              <p class="b2b-title">Dane do faktury / przelewu</p>
+              <div class="b2b-row">
+                <span class="b2b-key">NIP</span>
+                <span class="b2b-val">556-000-11-44</span>
+              </div>
+              <div class="b2b-row">
+                <span class="b2b-key">Nr konta</span>
+                <span class="b2b-val">36 1090 1069 0000 0001 5291 8606</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-embed">
+            <iframe
+              id="map-iframe"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokalizacja Dorin – Szosa Bydgoska 59, Inowrocław"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-logo">DORI<span>N</span></p>
+        <p class="footer-phone">
+          Klimatyzacja · Inowrocław &nbsp;|&nbsp;
+          <a href="tel:+48523532001">052 353 20 01</a> &nbsp;/&nbsp;
+          <a href="tel:+48501404988">501 404 988</a>
+        </p>
+        <p class="footer-copy">
+          © <span id="yr"></span> Dorin. Wszelkie prawa zastrzeżone.
+        </p>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
