@@ -1,5 +1,44 @@
 document.getElementById("yr").textContent = new Date().getFullYear();
 
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const btn = contactForm.querySelector(".btn-form-submit");
+    const labelIdle = btn.querySelector(".btn-label-idle");
+    const labelBusy = btn.querySelector(".btn-label-busy");
+    const wrap = contactForm.closest(".contact-form-wrap");
+    const successMsg = wrap.querySelector(".form-success");
+
+    btn.disabled = true;
+    labelIdle.hidden = true;
+    labelBusy.hidden = false;
+
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/biuro@dorin.pl", {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" },
+      });
+
+      if (res.ok) {
+        contactForm.hidden = true;
+        successMsg.hidden = false;
+      } else {
+        throw new Error();
+      }
+    } catch {
+      btn.disabled = false;
+      labelIdle.hidden = false;
+      labelBusy.hidden = true;
+      alert(
+        "Wystąpił błąd wysyłania. Zadzwoń do nas lub napisz bezpośrednio na biuro@dorin.pl"
+      );
+    }
+  });
+}
+
 const mapIframe = document.getElementById("map-iframe");
 if (mapIframe && window.MAPS_API_KEY && window.MAPS_API_KEY !== 'YOUR_KEY_HERE') {
   const place = "Szosa+Bydgoska+59,+88-100+Inowroc%C5%82aw,+Poland";
