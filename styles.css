@@ -988,15 +988,19 @@ nav.is-open .nav-hamburger span:nth-child(3) {
   nav {
     padding: 0 1.25rem;
     flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
   }
 
   .nav-logo {
-    display: none;
+    display: flex;
   }
 
   .nav-hamburger {
     display: flex;
     margin-left: auto;
+    height: 60px;
+    align-items: center;
   }
 
   .nav-links {
@@ -1005,6 +1009,7 @@ nav.is-open .nav-hamburger span:nth-child(3) {
     width: 100%;
     padding: 0.75rem 0 1rem;
     gap: 0;
+    order: 3;
     border-top: 1px solid rgba(255,255,255,0.1);
   }
 
@@ -1023,10 +1028,12 @@ nav.is-open .nav-hamburger span:nth-child(3) {
     border-bottom: 1px solid rgba(255,255,255,0.06);
   }
 
-  .nav-cta {
-    margin-top: 0.5rem;
+  .nav-links a.nav-cta {
     display: inline-block;
     width: auto;
+    padding: 6px 16px;
+    margin-top: 0.75rem;
+    border-bottom: none;
   }
   .hero-stats {
     gap: 2rem;
