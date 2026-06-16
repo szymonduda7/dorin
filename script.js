@@ -1,5 +1,20 @@
 document.getElementById("yr").textContent = new Date().getFullYear();
 
+const nav = document.querySelector("nav");
+const hamburger = document.querySelector(".nav-hamburger");
+hamburger.addEventListener("click", () => {
+  const open = nav.classList.toggle("is-open");
+  hamburger.setAttribute("aria-expanded", open);
+  hamburger.setAttribute("aria-label", open ? "Zamknij menu" : "Otwórz menu");
+});
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("is-open");
+    hamburger.setAttribute("aria-expanded", "false");
+    hamburger.setAttribute("aria-label", "Otwórz menu");
+  });
+});
+
 const mapIframe = document.getElementById("map-iframe");
 if (mapIframe && window.MAPS_API_KEY && window.MAPS_API_KEY !== 'YOUR_KEY_HERE') {
   const place = "Szosa+Bydgoska+59,+88-100+Inowroc%C5%82aw,+Poland";
