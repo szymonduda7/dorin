@@ -201,6 +201,31 @@ nav {
   transform: translateY(-1px);
 }
 
+.btn-red-outline {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--red);
+  padding: 13px 28px;
+  border-radius: 4px;
+  border: 1.5px solid var(--red);
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.15s;
+  display: inline-block;
+}
+
+.btn-red-outline:hover {
+  background: var(--red);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
 .btn-outline {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
