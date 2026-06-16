@@ -413,6 +413,15 @@ section {
   color: var(--brand-light);
 }
 
+#dlaczego .brand-link,
+#dlaczego .brand-link:visited {
+  color: var(--white);
+}
+
+#dlaczego .brand-link:hover {
+  color: var(--brand-light);
+}
+
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
