@@ -61,7 +61,6 @@ nav {
 .nav-logo-img {
   height: 36px;
   width: auto;
-  filter: brightness(0) invert(1);
   opacity: 0.95;
   display: block;
 }
@@ -134,7 +133,6 @@ nav {
   width: 400px;
   max-width: 80%;
   margin: 0 auto 2.5rem;
-  filter: brightness(0) invert(1);
   opacity: 0.92;
 }
 
@@ -734,7 +732,6 @@ footer {
 .footer-logo-img {
   height: 48px;
   width: auto;
-  filter: brightness(0) invert(1);
   opacity: 0.8;
   display: block;
 }
